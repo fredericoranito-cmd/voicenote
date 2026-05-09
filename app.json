@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "voicenote",
-    "slug": "voicenote",
+    "name": "Just Voice It",
+    "slug": "just-voice-it",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,14 +13,20 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fredericoranito.justvoiceit",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Esta aplicação precisa de acesso ao microfone para gravar a tua voz para clonagem e tradução."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.fredericoranito.justvoiceit",
+      "permissions": ["RECORD_AUDIO"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
